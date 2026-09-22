@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../controlador/css/boleta.css">
+</head>
+<body>
+     <a href="usuario.html">sesion</a>
+    <a href="alumnos.html">registro de alumnos</a>
+    <a href="docentes.html">registro de docentes</a>
+    <a href="materias.html">alta materias</a>
+    <a href="especialidad.html">alta especialidad</a>
+    <a href="gradoygrupo.html">gradoygrupo</a>
+    <a href="turno.html">turno</a>
+    <a href="boleta.html">boleta</a>
+    <a href="login.html">inicio de sesion</a>
+    <h1>Boleta</h1>
+<form action="guardarboleta.php" method="POST">
+    <label>Número de control</label><br>
+    <input type="text" name="numcontrol" required><br>
+
+    <label>Materia</label><br>
+    <input type="text" name="materia" required><br>
+
+    <label>Asistencia</label><br>
+    <input type="text" name="asistencia" required><br>
+
+    <label>Calificación</label><br>
+    <input type="text" name="calificacion" required><br>
+
+    <label>Nombre</label><br>
+    <input type="text" name="nombre" required><br>
+
+    <label>Parcial</label><br>
+    <input type="text" name="parcial" required><br>
+
+    <button class="button" type="submit">Guardar</button>
+</form>
+
+</body>
+</html>

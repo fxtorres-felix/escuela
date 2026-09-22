@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de alumnos</title>
+    <link rel="stylesheet" href="../controlador/css/alumnos.css">
+</head>
+
+<body>
+
+    <a href="usuario.html">sesion</a>
+    <a href="alumnos.html">registro de alumnos</a>
+    <a href="docentes.html">registro de docentes</a>
+    <a href="materias.html">alta materias</a>
+    <a href="especialidad.html">alta especialidad</a>
+    <a href="gradoygrupo.html">gradoygrupo</a>
+    <a href="turno.html">turno</a>
+    <a href="boleta.html">boleta</a>
+    <a href="login.html">inicio de sesion</a>
+
+    <h1>Registro de alumnos</h1>
+
+    <form action="guardaralumno.php" method="POST">
+
+        <label>No. Control</label><br>
+        <input type="text" name="numcontrol" required><br>
+
+        <label>Nombre</label><br>
+        <input type="text" name="nombre" required><br>
+
+        <label>Apellidos</label><br>
+        <input type="text" name="apellidos" required><br>
+
+        <label>Correo</label><br>
+        <input type="email" name="correo" required><br>
+
+        <label>Sexo</label><br>
+        <input type="radio" name="sexo" value="femenino" required> Femenino<br>
+        <input type="radio" name="sexo" value="masculino"> Masculino<br>
+
+        <label>Teléfono</label><br>
+        <input type="text" name="telefono" required><br><br>
+
+        <button class="button" type="submit">Guardar</button>
+
+    </form>
+
+</body>
+</html>
